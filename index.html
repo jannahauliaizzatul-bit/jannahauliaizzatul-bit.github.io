@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aulia Izzatul Jannah | Portfolio</title>
+<meta name="description" content="Portfolio Aulia Izzatul Jannah, mahasiswa Sistem Informasi yang sedang menekuni web development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<!-- Layar pembuka -->
+<div id="welcome">
+  <div class="ring"><img src="foto.jpg" alt="Foto Aulia Izzatul Jannah"></div>
+  <h1>Welcome to<br><em>My Portfolio</em></h1>
+  <p>Aulia Izzatul Jannah</p>
+  <button id="enter">Masuk</button>
+</div>
+
+<header id="nav">
+  <a href="#home" class="logo">Aulia</a>
+  <nav>
+    <a href="#about">Tentang</a>
+    <a href="#education">Pendidikan</a>
+    <a href="#skills">Keahlian</a>
+    <a href="#achievements">Pencapaian</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-text">
+    <p class="small">Mahasiswa Sistem Informasi · Calon Web Developer</p>
+    <h2>Aulia Izzatul Jannah</h2>
+    <p class="lead">Belajar sedikit demi sedikit, berkembang lebih baik dari kemarin.</p>
+    <p class="lead">The World For The Sake Of The Hereafter.</p>
+    <a class="btn" href="#about">Kenali saya</a>
+    </div>
+    <figure class="portrait"><img src="foto-hero.jpg" alt="Aulia Izzatul Jannah"></figure>
+  </section>
+
+  <section id="about">
+    <h3>Tentang Saya</h3>
+    <div class="about">
+      <p>Semuanya bermula dari rasa penasaran dan tanggung jawab sebagai mahasiswa Sistem Informasi angkatan 2026/2027. Dari situ saya mulai mengenal banyak hal yang sebelumnya benar-benar asing.</p>
+      <p>Proses itu menumbuhkan mimpi baru: menjadi web developer profesional dan melanjutkan S2 di luar negeri lewat beasiswa penuh. Saya percaya mimpi itu bisa dicapai dengan belajar dan berlatih sedikit demi sedikit, insyaallah.</p>
+      <p>Saya suka bereksperimen dengan kode, menjelajahi teknologi baru, dan mengubah ide menjadi sesuatu yang nyata dan bermanfaat bagi sekitar.</p>
+      <blockquote>Di luar layar, saya aktif sebagai pembawa acara, pesilat, dan relawan.</blockquote>
+    </div>
+  </section>
+
+  <section id="education">
+    <h3>Pendidikan</h3>
+    <div class="timeline">
+      <div><b>Universitas Mandiri</b><span>Program Studi Sistem Informasi · 2026 sampai sekarang</span></div>
+      <div><b>SMK Al-Mufti</b><span>Teknik Komputer dan Jaringan · Lulusan terbaik 2025/2026</span></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h3>Keahlian</h3>
+    <div class="cols">
+      <div class="card"><h4>Teknik Komputer dan Jaringan</h4><>
+        <li>Merancang Pengalamatan Jaringan</li><li>Memasang Jaringan Nirkabel</li><li>Mengkonfigurasi Routing pada Perangkat Jaringan dalam satu Autonomous System</li><li>Mengkonfigurasi Routing pada Perangkat Jaringan antar Autonomous System</li></div>
+      <div class="card"><h4>Sistem Informasi</h4><ul>
+        <li>Analisis kebutuhan dan perancangan sistem</li><li>Basis data dan SQL dasar</li><li>Pemrograman web: HTML, CSS, JavaScript</li><li>Desain antarmuka dan pengalaman pengguna</li><li>Pemodelan proses bisnis dan diagram UML</li><li>Pengelolaan data dan dokumentasi</li></ul></div>
+      <div class="card"><h4>Soft Skill</h4><ul>
+        <li>Public speaking, MC, moderator, dan host</li><li>Kepemimpinan dan kerja tim</li><li>Manajemen organisasi dan keuangan</li><li>Membuat konten dan podcast</li><li>Disiplin dan ketahanan lewat pencak silat</li></ul></div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h3>Pencapaian</h3>
+    <p class="note">Akademik dan non-akademik, dari tingkat kabupaten sampai nasional.</p>
+    <div class="stats">
+      <div><b data-n="12">0</b>Prestasi</div>
+      <div><b data-n="17">0</b>Kegiatan</div>
+      <div><b data-n="6">0</b>Tingkat nasional</div>
+    </div>
+    <div class="tabs">
+      <button class="on" data-tab="awardList">Prestasi</button>
+      <button data-tab="actList">Kegiatan dan Organisasi</button>
+    </div>
+    <ul class="list" id="awardList"></ul>
+    <ul class="list" id="actList" hidden></ul>
+  </section>
+
+  <section id="contact">
+    <h3>Mari Terhubung</h3>
+    <p class="note">Terbuka untuk kolaborasi, diskusi, dan kesempatan belajar.</p>
+    <div class="links">
+      <a href="mailto:jannahauliaizzatul@gmail.com">Email<small>jannahauliaizzatul@gmail.com</small></a>
+      <a href="https://github.com/jannahauliaizzatul-bit" target="_blank" rel="noopener">GitHub<small>jannahauliaizzatul-bit</small></a>
+      <a href="https://instagram.com/aulia.izzatul22" target="_blank" rel="noopener">Instagram<small>@aulia.izzatul22</small></a>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> Aulia Izzatul Jannah</footer>
+<script src="script.js"></script>
+</body>
+</html>
